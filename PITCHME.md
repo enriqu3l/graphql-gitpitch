@@ -137,27 +137,29 @@ query getUser($id: ID!){
 @[7-12, zoom-12](On this line observe that we are making another consult at the same time, thanks to graphql!)
 @snapend
 
-
 ---
 
 ## Let's update a user!
 
 ---
 
-
 @snap[north-east span-100 text-pink text-06]
 Trying to update an existing user.
 @snapend
 
 ```javascript zoom-18
-mutation updateUser($input:UpdateUserInput!){
-    updateUser(id:"{{id_user}}",input:$input){
+query getUser($id: ID!){
+  getUser(id:$id){
+    id,
+    name,
+    email,
+    username,
+    posts{
         id,
-        email,
-        username,
-        name,
-        company,
-        gender
+        title,
+        content,
+        published
+    }
   }
 }
 ```
@@ -167,7 +169,6 @@ mutation updateUser($input:UpdateUserInput!){
 @[2, zoom-13](On this line we are sending two parameters that we defined previously)
 @[3-8, zoom-12](Again, these are the fields we want to receive in the response body)
 @snapend
-
 
 ---
 
