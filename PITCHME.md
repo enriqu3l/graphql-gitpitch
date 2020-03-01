@@ -150,8 +150,8 @@ Trying to update an existing user.
 @snapend
 
 ```javascript zoom-18
-mutation updUser($input:UpdateUserInput!){
-    updateUser(id:$id,input:$input){
+mutation updateUser($input:UpdateUserInput!){
+    updateUser(id:"{{id_user}}",input:$input){
         id,
         email,
         username,
