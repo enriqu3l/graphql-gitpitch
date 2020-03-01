@@ -148,18 +148,14 @@ Trying to update an existing user.
 @snapend
 
 ```javascript zoom-18
-query getUser($id: ID!){
-  getUser(id:$id){
+mutation updateUser($id: ID!){
+  updateUser(id:$id){
     id,
-    name,
     email,
     username,
-    posts{
-        id,
-        title,
-        content,
-        published
-    }
+    name,
+    company,
+    gender,
   }
 }
 ```
