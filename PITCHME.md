@@ -1,27 +1,27 @@
-# Full Stack QA Certification
-## Day 2
+### Full Stack QA Certification
+### Day 2
 ### Automating a GraphQL Server
 
 ---
 
-## let's take advantage of Postman to automate Graphql
+### Postman + Graphql
 
 ![IMAGE](assets/img/Postman-Plus-GraphQL.png)
 
----?color=linear-gradient(180deg, white 75%, black 25%)
-@title[Customize Slide Layout]
 
-@snap[west span-50]
-## Customize the Layout
-@snapend
+---
 
-@snap[east span-50]
-![IMAGE](assets/img/presentation.png)
-@snapend
+### Let's meet playground
 
-@snap[south span-100 text-white]
-Snap Layouts let you create custom slide designs directly within your markdown.
-@snapend
+![IMAGE](assets/img/playground.png)
+
+
+---
+
+### Take a look into GraphQL schema
+
+![IMAGE](assets/img/graphql_schema.png)
+
 
 ---?color=linear-gradient(90deg, #5384AD 65%, white 35%)
 @title[Add A Little Imagination]
@@ -46,8 +46,12 @@ Snap Layouts let you create custom slide designs directly within your markdown.
 
 ---
 
+## Let's work with a mutation!
+
+---
+
 @snap[north-east span-100 text-pink text-06]
-Let's work with a mutation!
+Creating a nuw user
 @snapend
 
 ```javascript zoom-18
@@ -70,8 +74,12 @@ mutation createUser($name:String!,$email:String!){
 
 ---
 
+## Let's work with a query
+
+---
+
 @snap[north-east span-100 text-pink text-06]
-Let's work with a query!
+List all users
 @snapend
 
 ```javascript zoom-18
@@ -90,6 +98,9 @@ query listUsers{
 @[3-5, zoom-12](These are the fields we want to receive in the response body)
 @snapend
 
+---
+
+## Now try to Do it by your own
 
 ---
 
