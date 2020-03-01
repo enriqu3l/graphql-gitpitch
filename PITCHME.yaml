@@ -1,4 +1,4 @@
-# GitPitch In-60-Seconds - A Very Short Tutorial.
+# Wizeline Academy - QA Full Stack Certification
 #
 
 #
@@ -20,20 +20,20 @@ theme-margins    : [ "0", "15px" ]
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
 #
-highlight : hybrid
+highlight : tomorrow
 
 #
 # Theme-Override Setting
 # Doc: https://gitpitch.com/docs/settings/custom-theme
 #
-theme-override: slides/assets/css/PITCHME.css
+theme-override: assets/css/PITCHME.css
 
 #
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : slides/assets/img/logo.png
-logo-postion : top-left
+logo : assets/img/logo.png
+logo-position : top-left
 
 #
 # Layout Setting
@@ -45,7 +45,7 @@ layout : center
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "academy.wizeline.com - <strong>Wizeline & Docker Meetup</strong> - Docker Workshop"
+footnote : "Wizeline Academy - QA Full Stack Certification"
 
 #
 # Published Setting
@@ -57,7 +57,6 @@ published : true
 # Twitter Card Settings [Pro Only]
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "Docker Workshop"
-description : "Run a simple 3-tier app using Docker"
-
-remote-control : true
+title : "Wizeline Academy"
+description : "A QA Full Stack Certification"
+thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
