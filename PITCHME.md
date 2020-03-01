@@ -18,7 +18,7 @@
 
 ---
 
-### Take a look into GraphQL schema
+### GraphQL Schema
 
 ![IMAGE](assets/img/graphql_schema.png)
 
@@ -51,10 +51,10 @@
 ---
 
 @snap[north-east span-100 text-pink text-06]
-Creating a nuw user
+Creating a new user.
 @snapend
 
-```javascript zoom-18
+```json zoom-18
 mutation createUser($name:String!,$email:String!){
     createUser(name:$name,email:$email){
         id
@@ -79,7 +79,7 @@ mutation createUser($name:String!,$email:String!){
 ---
 
 @snap[north-east span-100 text-pink text-06]
-List all users
+List all users.
 @snapend
 
 ```javascript zoom-18
@@ -100,12 +100,12 @@ query listUsers{
 
 ---
 
-## Now try to Do it by your own
+## Let's inspect a new query!
 
 ---
 
 @snap[north-east span-100 text-pink text-06]
-Let's inspect a new query!
+Get an specific user.
 @snapend
 
 ```javascript zoom-18
@@ -135,8 +135,13 @@ query getUser($id: ID!){
 
 ---
 
+## Let's update a user!
+
+---
+
+
 @snap[north-east span-100 text-pink text-06]
-Let's update a user!
+Trying to update an existing user.
 @snapend
 
 ```javascript zoom-18
@@ -161,8 +166,12 @@ mutation updUser($input:UpdateUserInput!){
 
 ---
 
+## Let's delete a user!
+
+---
+
 @snap[north-east span-100 text-pink text-06]
-Let's delete a user!
+Deleting the last user created.
 @snapend
 
 ```javascript zoom-18
