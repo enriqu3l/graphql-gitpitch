@@ -149,7 +149,7 @@ Trying to update an existing user.
 
 ```javascript zoom-18
 mutation updateUser($id: ID!){
-  updateUser(id:$id){
+  updateUser(id:"{{id_user}}",input:$input){
     id,
     email,
     username,
