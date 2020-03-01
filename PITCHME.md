@@ -148,7 +148,7 @@ Trying to update an existing user.
 @snapend
 
 ```javascript zoom-18
-mutation updateUser($id: ID!){
+mutation updateUser($input: UpdateUserInput!){
   updateUser(id:"{{id_user}}",input:$input){
     id,
     email,
