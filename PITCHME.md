@@ -149,10 +149,21 @@ query getUser($id: ID!){
 Trying to update an existing user.
 @snapend
 
-
+```javascript zoom-18
+mutation updUser($input:UpdateUserInput!){
+    updateUser(id:$id,input:$input){
+        id,
+        email,
+        username,
+        name,
+        company,
+        gender
+  }
+}
+```
 
 @snap[south span-100 text-gray text-08]
-@[1](Here we are defining a mutation with the name updUser and we are sending an Input parameter)
+@[1](This is a mutation with the name updUser and we are sending an Input parameter)
 @[2, zoom-13](On this line we are sending two parameters that we defined previously)
 @[3-8, zoom-12](Again, these are the fields we want to receive in the response body)
 @snapend
