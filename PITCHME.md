@@ -23,7 +23,7 @@
 
 ---
 
-## Set Environment
+### Set Environment
 
 ![IMAGE](assets/img/create_collection.png)
 
@@ -32,7 +32,7 @@
 @title[Add A Little Imagination]
 
 @snap[north-west h4-white]
-#### What we want to do?
+#### What do we want to do?
 @snapend
 
 @snap[west span-55]
@@ -59,7 +59,7 @@
 Creating a new user.
 @snapend
 
-```json zoom-18
+```javascript zoom-18
 mutation createUser($name:String!,$email:String!){
     createUser(name:$name,email:$email){
         id
@@ -116,15 +116,15 @@ Get an specific user.
 ```javascript zoom-18
 query getUser($id: ID!){
   getUser(id:$id){
-    id
-    name
-    email
-    username
+    id,
+    name,
+    email,
+    username,
     posts{
-      id
-      title
-      content
-      published
+        id,
+        title,
+        content,
+        published
     }
   }
 }
