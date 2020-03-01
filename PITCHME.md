@@ -1,6 +1,4 @@
-### Full Stack QA Certification
-### Day 2
-### Automating a GraphQL Server
+## Let's Automate a GraphQL API
 
 ---
 
@@ -21,6 +19,13 @@
 ### GraphQL Schema
 
 ![IMAGE](assets/img/graphql_schema.png)
+
+
+---
+
+## Set Environment
+
+![IMAGE](assets/img/create_collection.png)
 
 
 ---?color=linear-gradient(90deg, #5384AD 65%, white 35%)
